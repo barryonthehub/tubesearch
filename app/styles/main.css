@@ -1,0 +1,180 @@
+.Browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 65px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/* my edits */
+img {
+    width:100%;
+}
+
+/*
+.col-xs-6:nth-child(2n + 1) { clear: left; }
+.col-sm-4:nth-child(3n + 1) { clear: left; }
+.col-md-3:nth-child(4n + 1) { clear: left; }
+.col-lg-2:nth-child(6n + 1) { clear: left; }
+*/
+
+/* clear first in row in ie 8 or lower */
+.multi-columns-row .first-in-row {
+        clear: left;
+}
+
+/* clear the first in row for any block that has the class "multi-columns-row" */
+.multi-columns-row .col-xs-6:nth-child(2n + 3) { clear: left; }
+.multi-columns-row .col-xs-4:nth-child(3n + 4) { clear: left; }
+.multi-columns-row .col-xs-3:nth-child(4n + 5) { clear: left; }
+.multi-columns-row .col-xs-2:nth-child(6n + 7) { clear: left; }
+.multi-columns-row .col-xs-1:nth-child(12n + 13) { clear: left; }
+
+@media (min-width: 768px) {
+        /* reset previous grid */
+        .multi-columns-row .col-xs-6:nth-child(2n + 3) { clear: none; }
+        .multi-columns-row .col-xs-4:nth-child(3n + 4) { clear: none; }
+        .multi-columns-row .col-xs-3:nth-child(4n + 5) { clear: none; }
+        .multi-columns-row .col-xs-2:nth-child(6n + 7) { clear: none; }
+        .multi-columns-row .col-xs-1:nth-child(12n + 13) { clear: none; }
+
+        /* clear first in row for small columns */
+        .multi-columns-row .col-sm-6:nth-child(2n + 3) { clear: left; }
+        .multi-columns-row .col-sm-4:nth-child(3n + 4) { clear: left; }
+        .multi-columns-row .col-sm-3:nth-child(4n + 5) { clear: left; }
+        .multi-columns-row .col-sm-2:nth-child(6n + 7) { clear: left; }
+        .multi-columns-row .col-sm-1:nth-child(12n + 13) { clear: left; }
+}
+@media (min-width: 992px) {
+        /* reset previous grid */
+        .multi-columns-row .col-sm-6:nth-child(2n + 3) { clear: none; }
+        .multi-columns-row .col-sm-4:nth-child(3n + 4) { clear: none; }
+        .multi-columns-row .col-sm-3:nth-child(4n + 5) { clear: none; }
+        .multi-columns-row .col-sm-2:nth-child(6n + 7) { clear: none; }
+        .multi-columns-row .col-sm-1:nth-child(12n + 13) { clear: none; }
+
+        /* clear first in row for medium columns */
+        .multi-columns-row .col-md-6:nth-child(2n + 3) { clear: left; }
+        .multi-columns-row .col-md-4:nth-child(3n + 4) { clear: left; }
+        .multi-columns-row .col-md-3:nth-child(4n + 5) { clear: left; }
+        .multi-columns-row .col-md-2:nth-child(6n + 7) { clear: left; }
+        .multi-columns-row .col-md-1:nth-child(12n + 13) { clear: left; }
+}
+@media (min-width: 1200px) {
+        /* reset previous grid */
+        .multi-columns-row .col-md-6:nth-child(2n + 3) { clear: none; }
+        .multi-columns-row .col-md-4:nth-child(3n + 4) { clear: none; }
+        .multi-columns-row .col-md-3:nth-child(4n + 5) { clear: none; }
+        .multi-columns-row .col-md-2:nth-child(6n + 7) { clear: none; }
+        .multi-columns-row .col-md-1:nth-child(12n + 13) { clear: none; }
+
+        /* clear first in row for large columns */
+        .multi-columns-row .col-lg-6:nth-child(2n + 3) { clear: left; }
+        .multi-columns-row .col-lg-4:nth-child(3n + 4) { clear: left; }
+        .multi-columns-row .col-lg-3:nth-child(4n + 5) { clear: left; }
+        .multi-columns-row .col-lg-2:nth-child(6n + 7) { clear: left; }
+        .multi-columns-row .col-lg-1:nth-child(12n + 13) { clear: left; }
+}
+
+.sign {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 350px;
+    border-radius: 20px;
+    border: 3px solid #669999;
+}
+
+.more {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
